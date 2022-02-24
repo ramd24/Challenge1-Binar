@@ -160,3 +160,31 @@ a.nav-link{
     line-height: 20px;
     color: white;
 }
+
+//section6
+footer{
+    margin-top: 150px;
+    margin-bottom: 188px;
+}
+
+.foot-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:hover{
+        text-decoration: none;
+        color:var(--primary-color)
+    }
+}
+
+.foot-list{
+    padding-bottom: 16px;
+    margin-left: 86px;
+}
+
+.foot-logo{
+    padding-left: 5%;
+}
