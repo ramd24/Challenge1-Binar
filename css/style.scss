@@ -7,7 +7,7 @@
 body{
     background-color: white;
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a.box{
@@ -32,58 +32,58 @@ a.nav-link{
     margin-left:10px;
 }
 
-.sewa-mobil{
-    @media screen and (min-width: 1200px){
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 54px;
-    }
-    @media screen and (min-width: 992px) and (max-width: 1200px){
-        font-size: 24px;
-        font-weight: 700;
-    }
-    @media screen and (min-width: 768px) and (max-width: 992px){
-        font-size: 24px;
-        font-weight: 700;
-    }
-    @media screen and (min-width: 576px) and (max-width: 768px){
-        font-size: 24px;
-        font-weight: 700;
-    }
-    @media screen and (max-width: 576px){
-        font-size: 16px;
-        font-weight: 700;
-    }
-}
+// .sewa-mobil{
+//     @media screen and (min-width: 1200px){
+//         font-size: 36px;
+//         font-weight: 700;
+//         line-height: 54px;
+//     }
+//     @media screen and (min-width: 992px) and (max-width: 1200px){
+//         font-size: 24px;
+//         font-weight: 700;
+//     }
+//     @media screen and (min-width: 768px) and (max-width: 992px){
+//         font-size: 24px;
+//         font-weight: 700;
+//     }
+//     @media screen and (min-width: 576px) and (max-width: 768px){
+//         font-size: 24px;
+//         font-weight: 700;
+//     }
+//     @media screen and (max-width: 576px){
+//         font-size: 16px;
+//         font-weight: 700;
+//     }
+// }
 
 .bg-mobil{
-    // @media screen and (min-width: 1440px){
-    //     transform: translateX(35%);
-    // }
-    // @media screen and (min-width: 1200px) and (max-width: 1440px) {
-    //     width: 100%;
-    //     height: auto;
-    //     transform: translateX(20%);
-    // }
-    // @media screen and (min-width: 992px) and (max-width: 1200px){
-    //     width: 100%;
-    //     height: auto;
-    //     transform: translateX(30%);
-    // }
-    // @media screen and (min-width: 768px) and (max-width: 992px){
-    //     width: 100%;
-    //     height: auto;
-    //     transform: translateX(30%);
-    // }
-    // @media screen and (min-width: 576px) and (max-width: 768px){
-    //     transform: translateX(0%);
-    // }
-    // @media screen and (max-width: 576px){
-    //     margin-top:30px;
-    //     width:100%;
-    //     height:auto;
-    //     transform: translateX(10%);
-    // }
+    @media screen and (min-width: 1440px){
+        transform: translateX(35%);
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        width: 100%;
+        height: auto;
+        transform: translateX(25%);
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        width: 100%;
+        height: auto;
+        transform: translateX(30%);
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        width: 100%;
+        height: auto;
+        transform: translateX(30%);
+    }
+    @media screen and (min-width: 576px) and (max-width: 768px){
+        transform: translateX(0%);
+    }
+    @media screen and (max-width: 576px){
+        margin-top:30px;
+        width:100%;
+        height:auto;
+        transform: translateX(10%);
+    }
 
     // @media (max-width: 575.98px) { ... }
 
@@ -118,6 +118,11 @@ a.nav-link{
     margin-left: 24px;
 }
 
+.card{
+    height: 196px; 
+    width: 268px;
+}
+
 .card-title{
     padding-top: 6px;
     font-weight: bold;
@@ -130,4 +135,28 @@ a.nav-link{
     padding-bottom: 5px;
     font-size: 14px;
     margin-left: 24px;
+}
+
+//section4
+
+
+//section5
+.sewamobil{
+    width: 1168px;
+    height: 326px;
+    background-color: #0D28A6;
+    border-radius: 13px;
+    margin-top: 156px;
+    color: white;
+}
+.sewa{
+    padding: 64px 0 16px 0;
+}
+.p-sewa{
+    padding: 16px 0 52px 0;
+    margin: 0 350px 0 350px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
 }

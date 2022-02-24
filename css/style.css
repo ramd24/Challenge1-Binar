@@ -6,7 +6,7 @@
 body {
   background-color: white;
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a.box {
@@ -33,39 +33,54 @@ a.nav-link:hover {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .sewa-mobil {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
+@media screen and (min-width: 1440px) {
+  .bg-mobil {
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .bg-mobil {
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .sewa-mobil {
-    font-size: 24px;
-    font-weight: 700;
+  .bg-mobil {
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .sewa-mobil {
-    font-size: 24px;
-    font-weight: 700;
+  .bg-mobil {
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .sewa-mobil {
-    font-size: 24px;
-    font-weight: 700;
+  .bg-mobil {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .sewa-mobil {
-    font-size: 16px;
-    font-weight: 700;
+  .bg-mobil {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
   }
 }
 
@@ -85,6 +100,11 @@ a.nav-link:hover {
   margin-left: 24px;
 }
 
+.card {
+  height: 196px;
+  width: 268px;
+}
+
 .card-title {
   padding-top: 6px;
   font-weight: bold;
@@ -97,5 +117,27 @@ a.nav-link:hover {
   padding-bottom: 5px;
   font-size: 14px;
   margin-left: 24px;
+}
+
+.sewamobil {
+  width: 1168px;
+  height: 326px;
+  background-color: #0D28A6;
+  border-radius: 13px;
+  margin-top: 156px;
+  color: white;
+}
+
+.sewa {
+  padding: 64px 0 16px 0;
+}
+
+.p-sewa {
+  padding: 16px 0 52px 0;
+  margin: 0 350px 0 350px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
