@@ -28,6 +28,7 @@ a.nav-link{
     }
 }
 
+//section1
 .register{
     margin-left:10px;
 }
@@ -81,7 +82,7 @@ a.nav-link{
         margin-top:30px;
         width:100%;
         height:auto;
-        transform: translateX(10%);
+        transform: translateX(5%);
     }
 
     // @media (max-width: 575.98px) { ... }
@@ -99,7 +100,60 @@ a.nav-link{
     // @media (min-width: 1200px) { ... }
 }
 
+.selamat{
+    padding-right: 30%;
+}
+
 // section2
+.serviceimg{
+    @media screen and (max-width: 992px){
+        margin-top:30px;
+        width:100%;
+        height:auto;
+    }  
+}
+.text-service{
+    @media screen and (max-width: 992px){
+        margin-left: 1rem;
+    } 
+    @media screen and (max-width: 576px){
+        order: 0;
+    }
+}
+.text-service h2{
+    font-weight: 700;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 54px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 768px){
+        font-size: 24px;
+    }
+    @media screen and (max-width: 576px){
+        width: 80%;
+        font-size: 24px;
+    }
+}
+
+.text-service ol{
+    font-size: 14px;
+}
+.imgservice{
+    @media screen and (max-width: 992px){
+        width: 80%;
+    } 
+    @media screen and (max-width: 576px){
+        order: 1;
+        margin-left: 10%;
+    }
+}
+
 .service-list{
     list-style: none;
     margin-left: -65px;
