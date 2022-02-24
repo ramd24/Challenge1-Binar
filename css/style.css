@@ -5,7 +5,7 @@
 
 body {
   background-color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   overflow-x: hidden;
 }
 
@@ -31,6 +31,42 @@ a.nav-link:hover {
 
 .register {
   margin-left: 10px;
+}
+
+.sewa-mobil {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+  .sewa-mobil {
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .sewa-mobil {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .sewa-mobil {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sewa-mobil {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sewa-mobil {
+    width: 80%;
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -60,17 +96,19 @@ a.nav-link:hover {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .bg-mobil {
-    width: 100%;
+    width: 496px;
     height: auto;
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .bg-mobil {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
   }
 }
 

@@ -6,7 +6,7 @@
 
 body{
     background-color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     overflow-x: hidden;
 }
 
@@ -32,29 +32,26 @@ a.nav-link{
     margin-left:10px;
 }
 
-// .sewa-mobil{
-//     @media screen and (min-width: 1200px){
-//         font-size: 36px;
-//         font-weight: 700;
-//         line-height: 54px;
-//     }
-//     @media screen and (min-width: 992px) and (max-width: 1200px){
-//         font-size: 24px;
-//         font-weight: 700;
-//     }
-//     @media screen and (min-width: 768px) and (max-width: 992px){
-//         font-size: 24px;
-//         font-weight: 700;
-//     }
-//     @media screen and (min-width: 576px) and (max-width: 768px){
-//         font-size: 24px;
-//         font-weight: 700;
-//     }
-//     @media screen and (max-width: 576px){
-//         font-size: 16px;
-//         font-weight: 700;
-//     }
-// }
+.sewa-mobil{
+    font-weight: 700;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 54px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 768px){
+        font-size: 24px;
+    }
+    @media screen and (max-width: 576px){
+        width: 80%;
+        font-size: 24px;
+    }
+}
 
 .bg-mobil{
     @media screen and (min-width: 1440px){
@@ -71,12 +68,14 @@ a.nav-link{
         transform: translateX(30%);
     }
     @media screen and (min-width: 768px) and (max-width: 992px){
+        width: 496px;
+        height: auto;
+        transform: translateX(0%);
+    }
+    @media screen and (min-width: 576px) and (max-width: 768px){
         width: 100%;
         height: auto;
         transform: translateX(30%);
-    }
-    @media screen and (min-width: 576px) and (max-width: 768px){
-        transform: translateX(0%);
     }
     @media screen and (max-width: 576px){
         margin-top:30px;
