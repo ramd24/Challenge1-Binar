@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Place favicon.ico in the root directory -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -60,11 +61,11 @@
           <h2 class="bestcar">Best Car Rental for any kind of trip in (Lokasimu)!</h2>
           <p style="margin-right:20px; font-size: 14px;">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan dengan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
           <ul>
-            <ol class="service-list"><img src="img/list.png" alt=""><a>Sewa Mobil Dengan Supir di Bali 12 Jam</a></ol>
-            <ol class="service-list"><img src="img/list.png" alt=""><a>Sewa Mobil Lepas Kunci di Bali 24 Jam</a></ol>
-            <ol class="service-list"><img src="img/list.png" alt=""><a>Sewa Mobil Jangka Panjang Bulanan</a></ol>
-            <ol class="service-list"><img src="img/list.png" alt=""><a>Gratis Antar - Jemput Mobil di Bandara</a></ol>
-            <ol class="service-list"><img src="img/list.png" alt=""><a>Layanan Airport Transfer / Drop In Out</a></ol>
+            <ol class="service-list mb-2"><img src="img/list.png" alt=""><a>Sewa Mobil Dengan Supir di Bali 12 Jam</a></ol>
+            <ol class="service-list mb-2"><img src="img/list.png" alt=""><a>Sewa Mobil Lepas Kunci di Bali 24 Jam</a></ol>
+            <ol class="service-list mb-2"><img src="img/list.png" alt=""><a>Sewa Mobil Jangka Panjang Bulanan</a></ol>
+            <ol class="service-list mb-2"><img src="img/list.png" alt=""><a>Gratis Antar - Jemput Mobil di Bandara</a></ol>
+            <ol class="service-list mb-2"><img src="img/list.png" alt=""><a>Layanan Airport Transfer / Drop In Out</a></ol>
           </ul>
         </div>
       </div>
@@ -120,17 +121,153 @@
 
     <!-- section4 -->
     <div class="container-fluid mt-5" style="padding-top: 30px;">
-      <h2 class="text-center" style="font-weight: bold; font-size:24px;">Testimonial</h2>
-      <p class="p-3 pb-5" style="text-align: center; font-size:14px;">Berbagai review positif dari para pelanggan kami</p>
-      <div class="carousel slide justify-content-center">
-        <div class="carousel-inner">
-          <div class="row">
-            <div class="carousel-item active">
-
+      <div class="container-fluid">
+        <h2 class="text-center" style="font-weight: bold; font-size:24px;">Testimonial</h2>
+        <p class="p-3 pb-5" style="text-align: center; font-size:14px;">Berbagai review positif dari para pelanggan kami</p>
+      
+        <!-- swiperjs -->
+        <div class="swiper swiper-test">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" id="btn-test">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto1.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto2.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto1.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto2.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto1.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto2.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div> -->
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto1.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto2.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                <img src="img/foto1.png" alt="">
+              </div>
+              <div class="col-md-9 text-start">
+                  <img style="padding-bottom: 5%;" src="img/rate.png" alt="">
+                  <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                  <p style="font-weight: bold;">John Dee 32, Bromo</p>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto2.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto1.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
+                  <img src="img/foto2.png" alt="">
+                </div>
+                <div class="col-md-9 text-start">
+                    <img style="padding-bottom: 0.5rem;" src="img/rate.png" alt="">
+                    <p style="padding-right: 8%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <p style="font-weight: bold;">John Dee 32, Bromo</p>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
+        <div class="container text-center mt-4">
+            <!-- <button class="button-prev" type="button" data-bs-target="#slidera" data-bs-slide="prev">
+                <span class="" aria-hidden="true"><img src="img/left_button.png" alt=""></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="button-next" type="button" data-bs-target="#slidera" data-bs-slide="next">
+                <span class="" aria-hidden="true"><img src="img/right_button.png" alt=""></span>
+                <span class="visually-hidden"></span>
+            </button> -->
+            <div class="btn-parent">
+              <button class="btn-prev" type="button" data-bs-target="#btn-test" data-bs-slide="prev"><img src="img/left_button.png" alt=""></button>
+              <button class="btn-next" type="button" data-bs-target="#btn-test" data-bs-slide="next"><img src="img/right_button.png" alt=""></button>
+            </div>
+        </div>
+        </div>
       </div>
+      
+      
     </div>
 
     <!-- section5 -->
@@ -258,6 +395,24 @@
   <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-test", {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "btn-next",
+        prevEl: "btn-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
