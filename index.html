@@ -18,25 +18,38 @@
   <!-- content -->
   
     <!-- navbar, still need modification later -->
-    <nav class="navbar navbar-expand-lg mt-2 sticky-top" style="background-color: #F1F3FF;">
+    <nav class="navbar navbar-expand-lg mt-2 sticky-top " style="background-color: #F1F3FF;">
       <div class="container">
         <a class="navbar-brand box" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end">
-          <a class="nav-link" href="#">Our Services</a>
-          <a class="nav-link" href="#">Why Us</a>
-          <a class="nav-link" href="#">Testimonial</a>
-          <a class="nav-link" href="#">FAQ</a>
-          <button class="register btn btn-success">Register</button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <button class="register btn btn-success">Register</button>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+    
 
 
     <!-- section1-->
-    <div class="container-fluid pt-5" style="background-color: #F1F3FF;">
+    <div class="container-fluid pt-3 pt-sm-3 pt-md-5" style="background-color: #F1F3FF;">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
@@ -126,7 +139,7 @@
         <p class="p-3 pb-5" style="text-align: center; font-size:14px;">Berbagai review positif dari para pelanggan kami</p>
       
         <!-- swiperjs -->
-        <div class="swiper swiper-test">
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" id="btn-test">
               <div class="col-md-3" style="padding-left: 10%; padding-bottom: 5%;">
@@ -251,23 +264,14 @@
           </div>
         </div>
         <div class="container text-center mt-4">
-            <!-- <button class="button-prev" type="button" data-bs-target="#slidera" data-bs-slide="prev">
-                <span class="" aria-hidden="true"><img src="img/left_button.png" alt=""></span>
-                <span class="visually-hidden"></span>
-            </button>
-            <button class="button-next" type="button" data-bs-target="#slidera" data-bs-slide="next">
-                <span class="" aria-hidden="true"><img src="img/right_button.png" alt=""></span>
-                <span class="visually-hidden"></span>
-            </button> -->
+            
             <div class="btn-parent">
               <button class="btn-prev" type="button" data-bs-target="#btn-test" data-bs-slide="prev"><img src="img/left_button.png" alt=""></button>
               <button class="btn-next" type="button" data-bs-target="#btn-test" data-bs-slide="next"><img src="img/right_button.png" alt=""></button>
             </div>
         </div>
-        </div>
+
       </div>
-      
-      
     </div>
 
     <!-- section5 -->
@@ -387,7 +391,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3 ">
           <p>Copyright Binar 2022</p>
-          <a href="" class="navbar-brand box"></a>
+          <div class="boxbwh justify-content-center text-md-start" href="#" ></div>
         </div>
       </div>
     </footer>
@@ -397,20 +401,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".swiper-test", {
+    var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 50,
       slidesPerGroup: 3,
       loop: true,
       loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      grabCursor: true,
+      mousewheel: false,
+      centeredSlides: true,
       navigation: {
         nextEl: "btn-next",
         prevEl: "btn-prev",
       },
+      breakpoints: {
+        350: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1440: {
+          slidesPerView: 3,
+        },
+
+      }
     });
   </script>
 </body>

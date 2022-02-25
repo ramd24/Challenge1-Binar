@@ -31,7 +31,6 @@ a.box {
 a.nav-link {
   font-size: 14px;
   color: black;
-  margin-right: 10px;
 }
 
 a.nav-link:hover {
@@ -40,8 +39,40 @@ a.nav-link:hover {
   color: var(--primary-color);
 }
 
+@media screen and (max-width: 992px) {
+  a.nav-link {
+    text-align: end;
+  }
+}
+
 .register {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .register {
+    margin-left: 88%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .register {
+    margin-left: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .register {
+    margin-left: 75%;
+  }
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(42, 41, 42, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: black;
 }
 
 .sewa-mobil {
@@ -394,5 +425,19 @@ footer {
 
 .foot-logo {
   padding-left: 5%;
+}
+
+div.boxbwh {
+  height: 34px;
+  width: 100px;
+  background-color: #0D28A6;
+  border-radius: 5px;
+  margin-left: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  div.boxbwh {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

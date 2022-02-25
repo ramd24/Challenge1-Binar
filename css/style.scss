@@ -22,6 +22,8 @@ body{
     overflow-x: hidden;
 }
 
+//navbar
+
 a.box{
     height: 34px;
     width: 100px;
@@ -32,18 +34,39 @@ a.box{
 a.nav-link{
     font-size: 14px;
     color:black;
-    margin-right: 10px;
     &:hover{
         transition: all 0.3s ease;
         color: var(--primary-color);
-        
     }
-}
+    @media screen and (max-width: 992px){
+        text-align: end;
+    }
 
-//section1
+}
 .register{
     margin-left:10px;
+
+    @media screen and (max-width: 992px){
+        margin-left: 88%;
+    }
+    @media screen and (max-width: 580px){
+        margin-left: 80%;
+    }
+    @media screen and (max-width: 400px){
+        margin-left: 75%;
+    }
+    
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(42, 41, 42, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: black;
+  }  
+//section1
+
 
 .sewa-mobil{
     font-weight: 700;
@@ -331,4 +354,16 @@ footer{
 
 .foot-logo{
     padding-left: 5%;
+}
+
+div.boxbwh{
+    height: 34px;
+    width: 100px;
+    background-color: #0D28A6;
+    border-radius: 5px;
+    margin-left:40%;
+
+    @media screen and (min-width: 768px){
+        margin-left:0;
+    }
 }
