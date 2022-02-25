@@ -4,8 +4,19 @@
     --primary-color:#0D28A6;
 }
 
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body{
-    margin:0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     background-color: white;
     font-family: 'Helvetica', sans-serif;
     overflow-x: hidden;
@@ -86,19 +97,7 @@ a.nav-link{
         transform: translateX(5%);
     }
 
-    // @media (max-width: 575.98px) { ... }
 
-    // // Small devices (landscape phones, 576px and up)
-    // @media (min-width: 576px) and (max-width: 767.98px) { ... }
-
-    // // Medium devices (tablets, 768px and up)
-    // @media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-    // // Large devices (desktops, 992px and up)
-    // @media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-    // // Extra large devices (large desktops, 1200px and up)
-    // @media (min-width: 1200px) { ... }
 }
 
 .selamat{
@@ -206,20 +205,31 @@ a.nav-link{
 .sewa{
     font-size: 36px;
     padding: 64px 0 16px 0;
+    @media screen and (max-width: 992px) {
+        font-size: 28px;
+    }
 }
 .p-sewa{
-    padding: 16px 0 52px 0;
-    margin: 0 350px 0 350px;
+    // padding: 16px 0 52px 0;
+    // margin: 0 350px 0 350px;
     text-align: center;
     font-size: 14px;
     line-height: 20px;
     color: white;
+
+    @media screen and (min-width: 992px) {
+        margin: 0 30% 0 30%;
+        
+    }
+    @media screen and (max-width: 992px) {
+        margin: 0 10% 0 10%;
+        margin-bottom: 5px;
+    }
+
 }
 
 
 //section6
-
-
 h4{
     font-weight: bold;
     font-size: 24px;
@@ -248,20 +258,33 @@ h4{
 
 //footer
 footer{
-    margin-top: 150px;
-    margin-bottom: 188px;
+    font-size: 14px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
+.foot-link-parent{
+    list-style: none;
+    
+}
 .foot-link{
     text-decoration: none;
     color: black;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
-
+    line-height: 30px;
+    
     &:hover{
         text-decoration: none;
         color:var(--primary-color)
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        margin-left: -30px;
+    }
+    @media screen and (max-width: 768px){
+        margin-left: -30px;
+        
     }
 }
 

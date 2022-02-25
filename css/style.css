@@ -3,7 +3,19 @@
   --primary-color:#0D28A6;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
   background-color: white;
   font-family: 'Helvetica', sans-serif;
   overflow-x: hidden;
@@ -248,16 +260,34 @@ a.nav-link:hover {
 }
 
 .sewa {
+  font-size: 36px;
   padding: 64px 0 16px 0;
 }
 
+@media screen and (max-width: 992px) {
+  .sewa {
+    font-size: 28px;
+  }
+}
+
 .p-sewa {
-  padding: 16px 0 52px 0;
-  margin: 0 350px 0 350px;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .p-sewa {
+    margin: 0 30% 0 30%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .p-sewa {
+    margin: 0 10% 0 10%;
+    margin-bottom: 5px;
+  }
 }
 
 h4 {
@@ -289,8 +319,13 @@ h4 {
 }
 
 footer {
-  margin-top: 150px;
-  margin-bottom: 188px;
+  font-size: 14px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.foot-link-parent {
+  list-style: none;
 }
 
 .foot-link {
@@ -298,12 +333,24 @@ footer {
   color: black;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .foot-link:hover {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .foot-link {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .foot-link {
+    margin-left: -30px;
+  }
 }
 
 .foot-list {
